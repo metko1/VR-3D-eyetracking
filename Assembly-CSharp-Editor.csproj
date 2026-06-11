@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\GeonObjectGenerator.cs" />
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Editor">
+ <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
@@ -63,32 +69,26 @@
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Recorder">
+ <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Base">
+ <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Recorder.Editor">
- <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Recorder">
- <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Recorder.Base">
- <HintPath>C:/Users/Alex/Eye-hand coordination/VR 3D eyetracking/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.36f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
