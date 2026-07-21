@@ -247,6 +247,14 @@ public static class GeonObjectAssembler
         mf.sharedMesh = mesh;
         var mr = go.AddComponent<MeshRenderer>();
         mr.sharedMaterial = material;
+
+        // Collider matching the rendered mesh exactly. A MeshCollider sharing the
+        // same mesh follows the geon geometry precisely (needed for accurate gaze /
+        // pointer raycasts) and picks up the child's localScale automatically, so
+        // re-fitted attachment scales stay in sync. Left non-convex for an exact
+        // hull; the geons are static stimuli, so no rigidbody collision is needed.
+        var mc = go.AddComponent<MeshCollider>();
+        mc.sharedMesh = mesh;
         return go;
     }
 
