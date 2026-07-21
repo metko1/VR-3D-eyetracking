@@ -8,6 +8,7 @@ namespace PupilLabs
     {
         public Transform gazeOrigin;
         public GazeController gazeController;
+	private GazeLogger gazeLogger;
 
         [Header("Settings")]
         [Range(0f, 1f)]
@@ -66,6 +67,7 @@ namespace PupilLabs
 
             origMarkerScale = gazeDirectionMarker.localScale;
             targetRenderer = gazeDirectionMarker.GetComponent<MeshRenderer>();
+	    gazeLogger = GetComponent<GazeLogger>();
 
             StartVisualizing();
         }
@@ -171,7 +173,7 @@ namespace PupilLabs
 
             Vector3 origin = gazeOrigin.position;
             Vector3 direction = gazeOrigin.TransformDirection(localGazeDirection);
-
+	    
             if (Physics.SphereCast(origin, sphereCastRadius, direction, out RaycastHit hit, Mathf.Infinity))
             {
                 Debug.DrawRay(origin, direction * hit.distance, Color.yellow);
@@ -185,6 +187,8 @@ namespace PupilLabs
                 {
                     gazeDirectionMarker.localScale = GetErrorAngleBasedScale(origMarkerScale, hit.distance, angleErrorEstimate);
                 }
+		
+		gazeLogger.LogHit(hit);
             }
             else
             {

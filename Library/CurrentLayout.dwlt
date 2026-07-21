@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 56
+  controlID: 77
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 93
+  controlID: 78
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 94
+  controlID: 79
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,20 +310,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Plugins/Pupil/Scripts/Utils
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Plugins/Pupil/Scripts/Utils
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Alex\Eye-hand coordination\VR 3D eyetracking
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 27}
-    m_SelectedIDs: 50130000
-    m_LastClickedID: 4944
-    m_ExpandedIDs: 00000000340f00007e100000501500005a1600006c160000c01600001c17000000ca9a3b
+    scrollPos: {x: 0, y: 147}
+    m_SelectedIDs: 70120000
+    m_LastClickedID: 4720
+    m_ExpandedIDs: 00000000360f0000f8100000521500005c1600006e160000c21600001e17000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -351,7 +351,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000340f00007e100000501500005a1600006c160000c01600001c170000
+    m_ExpandedIDs: 00000000360f000080100000521500005c1600006e160000c21600001e170000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -470,9 +470,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 521b0000
-      m_LastClickedID: 6994
-      m_ExpandedIDs: dcfbffffdefbffffee1b0000fc1b0000
+      m_SelectedIDs: 8afaffff
+      m_LastClickedID: -1398
+      m_ExpandedIDs: dcfbffffdefbffffa2390000d43900009a3c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -528,9 +528,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.19843435, y: 0.15808678, z: 0.8793721}
+    m_Target: {x: 0.37285924, y: 0.26130295, z: -0.26632953}
     speed: 2
-    m_Value: {x: 0.19843435, y: 0.15808678, z: 0.8793721}
+    m_Value: {x: 0.37285924, y: 0.26130295, z: -0.26632953}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -558,13 +558,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.14406827, y: 0.85560584, z: -0.3385797, w: 0.36406976}
+    m_Target: {x: 0.4148146, y: 0.5609757, z: -0.38527554, w: 0.603985}
     speed: 2
-    m_Value: {x: 0.14406827, y: 0.85560584, z: -0.3385797, w: 0.36406976}
+    m_Value: {x: 0.4148146, y: 0.5609757, z: -0.38527554, w: 0.603985}
   m_Size:
-    m_Target: 8.353367
+    m_Target: 7.876832
     speed: 2
-    m_Value: 8.353367
+    m_Value: 7.876832
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -635,18 +635,18 @@ MonoBehaviour:
       y: 17
       width: 978
       height: 620
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 489, y: 310}
+    m_Scale: {x: 1.3719674, y: 1.3719674}
+    m_Translation: {x: 531.50714, y: 329.25574}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -489
-      y: -310
-      width: 978
-      height: 620
+      x: -387.40506
+      y: -239.988
+      width: 712.8449
+      height: 451.90576
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}

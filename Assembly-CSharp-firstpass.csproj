@@ -149,6 +149,7 @@
      <Compile Include="Assets\Plugins\Pupil\Scripts\GazeController.cs" />
      <Compile Include="Assets\Plugins\Pupil\Scripts\GazeData.cs" />
      <Compile Include="Assets\Plugins\Pupil\Scripts\GazeListener.cs" />
+     <Compile Include="Assets\Plugins\Pupil\Scripts\GazeLogger.cs" />
      <Compile Include="Assets\Plugins\Pupil\Scripts\GazeVisualizer.cs" />
      <Compile Include="Assets\Plugins\Pupil\Scripts\Helpers.cs" />
      <Compile Include="Assets\Plugins\Pupil\Scripts\NetMQCleanup.cs" />
