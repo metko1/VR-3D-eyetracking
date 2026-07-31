@@ -68,6 +68,10 @@ namespace PupilLabs
             origMarkerScale = gazeDirectionMarker.localScale;
             targetRenderer = gazeDirectionMarker.GetComponent<MeshRenderer>();
 	    gazeLogger = GetComponent<GazeLogger>();
+	    if (gazeLogger == null)
+    	    {
+        	Debug.LogError("Kein GazeLogger gefunden!");
+    }
 
             StartVisualizing();
         }

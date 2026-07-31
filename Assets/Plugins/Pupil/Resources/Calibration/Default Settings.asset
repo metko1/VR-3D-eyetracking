@@ -15,4 +15,3 @@ MonoBehaviour:
   secondsPerTarget: 1.5
   ignoreInitialSeconds: 0.3
   samplesPerTarget: 30
-  mode: 1
