@@ -1,27 +1,28 @@
 ﻿using System.IO;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR; // Essential for SteamVR 2.0
+//using Valve.VR; // Essential for SteamVR 2.0
 
 public class GazeLogger : MonoBehaviour
 {
     [Header("References")]
     private StreamWriter writer;
-    private SteamVR_Action_Pose poseAction;
 
+    [Tooltip("Assign the specific VR Camera (Head) object here, not the Rig")]
+    public Transform headsetTransform;
+    
     [Header("Settings")]
     public string fileName = "gaze_hits.csv";
     private string filePath;
     
     void Start()
     {
-        // Initialize the Pose action from the default set
-        // This replaces the need for Unity Input System bindings
-        poseAction = SteamVR_Actions.default_Pose;
-        
-        if (poseAction == null)
+        // Auto-assign if not set: looks for the main camera or SteamVR camera
+        if (headsetTransform == null)
         {
-            Debug.LogError("SteamVR Pose action not found. Ensure you clicked 'Save and Generate' in Window > SteamVR Input.");
+            headsetTransform = Camera.main?.transform;
+            if (headsetTransform == null)
+                Debug.LogError("[RecordHeadOrientation] No headset transform assigned and no Main Camera found!");
         }
 
         // Define file path in persistent data path
@@ -40,16 +41,10 @@ public class GazeLogger : MonoBehaviour
     	  return;
 	}
 
-        if (poseAction == null || !poseAction.active)
-        {
-          Debug.LogError("No poseAction or not active");
-          return;
-        }
-         
-        // Get the HMD (Head) position and rotation
-        // SteamVR_Input_Sources.Head specifically targets the headset
-        Vector3 pos = poseAction.GetLocalPosition(SteamVR_Input_Sources.Head);
-        Quaternion rot = poseAction.GetLocalRotation(SteamVR_Input_Sources.Head);
+	if (headsetTransform == null)
+	   return;
+        Vector3 pos = headsetTransform.position;
+        Vector3 rot = headsetTransform.eulerAngles;
 
         writer.WriteLine(
             Time.time.ToString("F4") + ","

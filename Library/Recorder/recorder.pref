@@ -112,4 +112,4 @@ MonoBehaviour:
       colorSpace: 0
       flipFinalOutput: 0
   m_AudioInputSettings:
-    preserveAudio: 1
+    preserveAudio: 0

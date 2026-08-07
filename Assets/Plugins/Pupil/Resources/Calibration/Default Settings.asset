@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7af549a719760347987e7e27fbc634f, type: 3}
   m_Name: Default Settings
   m_EditorClassIdentifier: 
-  secondsPerTarget: 1.5
+  secondsPerTarget: 2
   ignoreInitialSeconds: 0.3
-  samplesPerTarget: 30
+  samplesPerTarget: 40
